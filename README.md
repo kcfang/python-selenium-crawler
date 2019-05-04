@@ -8,14 +8,14 @@ docker build -t python-selenium-crawler .
 ### Install manually
 ```
 // Install python3 and selenium
-apt update && apt install -y python3 python3-pip wget
+apt update && apt install -y python3 python3-pip wget zip
 pip install -r requirements.txt
 
 // Install chrome and chromedriver
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 apt install ./google-chrome-stable_current_amd64.deb
 wget https://chromedriver.storage.googleapis.com/74.0.3729.6/chromedriver_linux64.zip
-tar xf chromedriver_linux64.zip -C /root/
+unzip chromedriver_linux64.zip -d /root/
 ```
 
 
